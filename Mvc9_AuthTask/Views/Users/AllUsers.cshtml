@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewData["Title"] = "AllUsers";
+}
+
+
+
+@model List<User>
+
+@if (Model.Any(x => x.IsActive == false))
+{
+    <h1>Not activated users</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Is Active</th>
+                <th scope="">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Where(x => x.IsActive == false))
+            {
+                <tr>
+                    <td>
+                        @item.Id
+                    </td>
+                    <td>
+                        @item.Name
+                    </td>
+                    <td>
+                        @item.CreatedAt
+                    </td>
+                    <td>
+                        @item.IsActive
+                    </td>
+                    <td>
+                        <a asp-controller="Users" asp-action="ActiveUser" asp-route-id="@item.Id" class="btn btn-outline-info">
+                            Activate
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <div class="d-flex justify-content-center align-items-center">
+
+    <h2 >No inactive users found.</h2>
+    </div>
+}

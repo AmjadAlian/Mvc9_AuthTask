@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc9_AuthTask", "Mvc9_AuthTask\Mvc9_AuthTask.csproj", "{BF78047A-089B-44B0-9680-C7B1886837CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF78047A-089B-44B0-9680-C7B1886837CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF78047A-089B-44B0-9680-C7B1886837CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF78047A-089B-44B0-9680-C7B1886837CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF78047A-089B-44B0-9680-C7B1886837CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD622A0A-3147-492D-9CED-6B275017649A}
+	EndGlobalSection
+EndGlobal

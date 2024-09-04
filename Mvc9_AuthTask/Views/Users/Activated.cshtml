@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewData["Title"] = "Activated";
+}
+
+<h1>Activated users</h1>
+
+@model List<User>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Is Active</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            @if (item.IsActive == true)
+            {
+                <tr>
+                    <td>
+                        @item.Id
+
+                    </td>
+                    <td>
+                        @item.Name
+                    </td>
+                    <td>
+                        @item.CreatedAt
+                    </td>
+                    <td>
+                        @item.IsActive
+                    </td>
+                </tr>
+            }
+        }
+
+    </tbody>
+</table>
